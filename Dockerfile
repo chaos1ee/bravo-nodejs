@@ -15,4 +15,4 @@ ENV PORT 80
 EXPOSE ${PORT}
 
 # 容器创建时执行
-CMD [ "node", "app.js" ]
+CMD [ "npm", "start" ]
