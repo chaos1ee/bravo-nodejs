@@ -4,9 +4,7 @@
   "description": "这是一个nodejs实战项目",
   "main": "app.ts",
   "scripts": {
-    "dev": "npm run start:watch",
-    "start": "node --inspect -r ts-node/register ./src/app.ts",
-    "start:watch": "nodemon",
+    "start": "nodemon",
     "update:doc": "npx readme-md-generator -p ./template.md",
     "build": "tsc "
   },
