@@ -1,5 +1,5 @@
 <h1 align="center">Welcome to nodejs-in-action 👋</h1>
-<p>
+<p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/maybeeee/nodejs#readme">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
@@ -12,11 +12,11 @@
   </a>
 </p>
 
-> 这是一个nodejs实战项目
+> 这是一个 nodejs 实战项目
 
 ### 🏠 [Homepage](https://github.com/maybeeee/nodejs#readme)
 
-## 使用nodejs运行项目
+## 使用 nodejs 运行项目
 
 ### 安装依赖
 
@@ -40,7 +40,7 @@ docker run -dit maybeeee/node-demo
 
 👤 **maybeeee**
 
-* Github: [@maybeeee](https://github.com/maybeeee)
+- Github: [@maybeeee](https://github.com/maybeeee)
 
 ## 🤝 Contributing
 
@@ -55,5 +55,6 @@ Give a ⭐️ if this project helped you!
 Copyright © 2019 [maybeeee](https://github.com/maybeeee).<br />
 This project is [MIT](https://github.com/maybeeee/nodejs/blob/master/LICENSE) licensed.
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
