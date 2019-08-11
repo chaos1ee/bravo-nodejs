@@ -1,0 +1,8 @@
+{
+  "restartable": "rs",
+  "verbose": true,
+  "exec": "npm start",
+  "ignore": [".git", ".svn", "node_modules/**/node_modules"],
+  "watch": ["src"],
+  "ext": "ts"
+}
