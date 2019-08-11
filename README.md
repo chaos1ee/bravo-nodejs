@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to nodejs-in-action 👋</h1>
+<h1 align="center">Nodejs In Action</h1>
 <p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/maybeeee/nodejs#readme">
@@ -42,7 +42,7 @@ docker run -dit maybeeee/node-demo
 
 - Github: [@maybeeee](https://github.com/maybeeee)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/maybeeee/nodejs/issues).
 
