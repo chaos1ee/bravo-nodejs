@@ -28,7 +28,7 @@ yarn build
 ## Run in docker
 
 ```sh
-docker run -dit maybeeee/node-demo
+docker run -dit maybeeee/bravo-nodejs
 ```
 
 ## Author
