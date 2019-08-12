@@ -1,9 +1,9 @@
-<h1 align="center">nodejs-in-action</h1>
+<h1 align="center">Bravo Node.js</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> 这是一个nodejs实战项目
+> 这是一个nodejs实战项目。
 
 ### 🏠 [Homepage](https://github.com/maybeeee/nodejs#readme)
 
