@@ -1,6 +1,6 @@
 import * as Koa from 'koa';
-
-const registerRouter = require('./routes');
+import { registerRouter } from './routers';
+import { sunLog } from './utils/log';
 
 const app = new Koa();
 
@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 app.use(registerRouter());
 
 app.listen(PORT, () => {
-  console.log(`Koa is listening on ${PORT}`);
+  sunLog.success(`Koa is listening on ${PORT}`);
 });
 
 module.exports = app;
