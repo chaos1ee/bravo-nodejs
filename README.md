@@ -1,5 +1,5 @@
 <h1 align="center">Bravo Node.js</h1>
-<p>
+<p align="center">
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
 </p>
 
