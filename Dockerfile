@@ -1,14 +1,15 @@
-FROM node:latest
+FROM node:10.16.2-alpine
 
-LABEL version="0.0.1"
-LABEL author="maybeeee" 
+LABEL version=0.0.1
+LABEL author=maybeeee
 
 ENV PORT 80
 
 WORKDIR /app
 COPY  . /app
-RUN npm install
+
+RUN yarn
 
 EXPOSE $PORT
 
-CMD [ "npm", "start" ]
+CMD [ "yarn", "start" ]
