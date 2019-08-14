@@ -1,8 +1,11 @@
+require('dotenv').config({ path: resolve(__dirname, './.env') })
+
 import * as puppeteer from 'puppeteer'
 import { resolve } from 'path'
-import { sunLog } from '../util'
+import * as log4js from 'log4js'
 
-require('dotenv').config({ path: resolve(__dirname, './.env') })
+const logger = log4js.getLogger()
+logger.level = 'debug'
 
 // prettier-ignore
 ;(async () => {
@@ -13,9 +16,9 @@ require('dotenv').config({ path: resolve(__dirname, './.env') })
     await page.goto(process.env.PUPPETEER_TARGET, { waitUntil: 'networkidle2' })
     await page.pdf({ path: 'baidu.pdf', format: 'A4' })
 
-    sunLog.success(`Crawled data from ${process.env.PUPPETEER_TARGET} success`)
+    logger.info(`Crawled data from ${process.env.PUPPETEER_TARGET} success`)
   } catch (err) {
-    sunLog.failed(`Crawled data failed`)
+    logger.warn('Crawled data failure')
   } finally {
     await browser.close()
   }

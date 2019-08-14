@@ -1,5 +1,6 @@
 import * as Router from 'koa-router'
 import { Context } from 'koa'
+import { logger } from '../util'
 
 const router = new Router()
 
@@ -8,6 +9,7 @@ const ARTICLES = [{ name: '鲁宾逊漂流记' }, { name: '上下五千年' }]
 router.prefix('/article')
 
 router.get('/all', (ctx: Context) => {
+  logger.info('Got all articles!')
   ctx.body = ARTICLES
 })
 
