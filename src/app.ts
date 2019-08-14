@@ -1,15 +1,15 @@
-import * as Koa from 'koa';
-import { registerRouter } from './routers';
-import { sunLog } from './utils/log';
+import * as Koa from 'koa'
+import { registerRouter } from './routers'
+import { sunLog } from './utils/log'
 
-const app = new Koa();
+const app = new Koa()
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000
 
-app.use(registerRouter());
+app.use(registerRouter())
 
 app.listen(PORT, () => {
-  sunLog.success(`Koa is listening on ${PORT}`);
-});
+  sunLog.success(`Koa is listening on ${PORT}`)
+})
 
-module.exports = app;
+module.exports = app
