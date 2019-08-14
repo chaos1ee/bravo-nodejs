@@ -1,6 +1,8 @@
 import * as Koa from 'koa'
 import { registerRouter } from './routers'
-import { sunLog } from './utils/log'
+import { sunLog } from './util'
+
+require('dotenv').config()
 
 const app = new Koa()
 
