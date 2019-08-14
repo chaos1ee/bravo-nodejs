@@ -1,17 +1,17 @@
-const chalk = require('chalk')
+import { configure, getLogger } from 'log4js'
 
-const log = console.log
-export default log
+export const logger = getLogger('platform')
 
-const SUCCESS = chalk.white.bgGreen.bold(' Success ')
-const FAILED = chalk.yellow.bgRed.bold(' Failed ')
-
-const success = (str: string) => {
-  log(`${SUCCESS} ${chalk.green(str)}`)
+if (process.env.NODE_ENV === 'development') {
+  logger.level = 'debug'
+} else {
+  configure({
+    appenders: {
+      platform: {
+        type: 'file',
+        filename: process.env.LOG_FILENAME
+      }
+    },
+    categories: { default: { appenders: ['platform'], level: 'info' } }
+  })
 }
-
-const failed = (str: string) => {
-  log(`${FAILED} ${chalk.red(str)}`)
-}
-
-export const sunLog = { success, failed }
