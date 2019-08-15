@@ -1,8 +1,10 @@
 import { configure, getLogger } from 'log4js'
 
-export const logger = getLogger('platform')
+let logger
 
 if (process.env.NODE_ENV === 'development') {
+  logger = getLogger()
+
   logger.level = 'debug'
 } else {
   configure({
@@ -12,6 +14,15 @@ if (process.env.NODE_ENV === 'development') {
         filename: process.env.LOG_FILENAME
       }
     },
-    categories: { default: { appenders: ['platform'], level: 'info' } }
+    categories: {
+      default: {
+        appenders: ['platform'],
+        level: 'info'
+      }
+    }
   })
+
+  logger = getLogger('platform')
 }
+
+export { logger }
