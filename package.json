@@ -4,8 +4,7 @@
   "description": "这是一个nodejs实战项目",
   "main": "app.ts",
   "scripts": {
-    "start:dev": "nodemon",
-    "start:prod": "cross-env NODE_ENV=production node -r ts-node/register src/app.ts",
+    "start": "nodemon",
     "update:readme": "npx readme-md-generator -p ./template.md",
     "crawl": "node -r ts-node/register src/crawler/index.ts"
   },
@@ -20,8 +19,6 @@
     "koa-logger": "^3.2.1",
     "koa-router": "^7.4.0",
     "log4js": "^5.0.0",
-    "puppeteer": "^1.19.0",
-    "shelljs": "^0.8.3",
     "ts-node": "^8.3.0",
     "typescript": "^3.5.3"
   },
