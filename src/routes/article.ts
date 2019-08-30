@@ -6,7 +6,7 @@ const router = new Router()
 
 const ARTICLES = [{ name: '鲁宾逊漂流记' }, { name: '上下五千年' }]
 
-router.prefix('/article')
+router.prefix('/api/article')
 
 router.get('/all', (ctx: Context) => {
   logger.info('Got all articles!')
