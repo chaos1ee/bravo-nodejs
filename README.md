@@ -7,6 +7,12 @@
 
 ### 🏠 [Homepage](https://github.com/maybeeee/nodejs#readme)
 
+## Run in docker
+
+```sh
+docker run -dit -p 3000:80 maybeeee/bravo-nodejs
+```
+
 ## Install
 
 ```sh
@@ -23,12 +29,6 @@ yarn dev
 
 ```sh
 yarn build
-```
-
-## Run in docker
-
-```sh
-docker run -dit -p 3000:80 maybeeee/bravo-nodejs
 ```
 
 ## Author
