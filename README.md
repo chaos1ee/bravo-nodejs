@@ -5,18 +5,18 @@
 
 ## Description
 
-这是一个koa项目骨架，遵循MVC架构，集成了nodejs生态常用的模块。
+这是一个 koa 项目骨架，遵循 MVC 架构，集成了 nodejs 生态常用的模块。
 
 ## 自动化构建
 
-使用github的webhook关联dockerhub上的镜像仓库，每次往master分支合并代码都会触发hook，以更新dockerhub镜像仓库里的latest镜像，每次给代码打tag都会生成一个release镜像用于发版。
+使用 github 的 webhook 关联 dockerhub 上的镜像仓库，每次往 master 分支合并代码都会触发 hook，以更新 dockerhub 镜像仓库里的 latest 镜像，每次给代码打 tag 都会生成一个 release 镜像用于发版。
 
-## 🏠 [Homepage](https://github.com/maybeeee/nodejs#readme)
+## 🏠 [Homepage](https://github.com/chaos1ee/bravo-nodejs#readme)
 
 ## Run in docker
 
 ```sh
-docker run -dit -p 3000:80 maybeeee/bravo-nodejs
+docker run -dit -p 3000:80 chaos1ee/bravo-nodejs
 ```
 
 ## Install
@@ -28,7 +28,7 @@ yarn
 ## Dev
 
 ```sh
-yarn dev
+yarn start
 ```
 
 ## Build
@@ -39,11 +39,11 @@ yarn build
 
 ## Author
 
-👤 **maybeeee**
+👤 **chaos1ee**
 
 ## Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/maybeeee/nodejs/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/chaos1ee/bravo-nodejs/issues).
 
 ## Show your support
 
