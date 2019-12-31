@@ -1,6 +1,6 @@
-import * as Router from 'koa-router'
-import { Context } from 'koa'
+import * as Router from '@koa/router'
 import { logger } from '../util'
+import { Context } from 'koa'
 
 const router = new Router()
 
