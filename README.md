@@ -5,7 +5,7 @@
 
 ## Description
 
-这是一个 koa 项目骨架，遵循 MVC 架构，集成了 nodejs 生态常用的模块。
+这是一个 koa 项目脚手架，遵循 MVC 架构，集成了 nodejs 生态常用的模块。
 
 ## 自动化构建
 
