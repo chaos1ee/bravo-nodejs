@@ -1,12 +1,16 @@
 {
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", ".vscode"],
+  "include": ["src"],
   "compilerOptions": {
-    "outDir": "dist",
-    "module": "commonjs",
+    "baseUrl": ".",
+    "outDir": "./dist/",
     "target": "es6",
-    "sourceMap": true,
+    "types": ["node"],
     "typeRoots": ["./node_modules/@types"],
-    "types": ["node"]
+    "moduleResolution": "node",
+    "module": "CommonJS",
+    "strict": true,
+    "importHelpers": true,
+    "removeComments": false,
+    "sourceMap": true
   }
 }

@@ -1,8 +1,0 @@
-{
-  "restartable": "rs",
-  "verbose": true,
-  "exec": "node --inspect -r ts-node/register src/app.ts",
-  "ignore": [".git", ".svn", "node_modules/**/node_modules"],
-  "watch": ["src"],
-  "ext": "ts"
-}

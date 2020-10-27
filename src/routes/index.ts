@@ -2,7 +2,7 @@ import * as compose from 'koa-compose'
 import * as glob from 'glob'
 import { resolve } from 'path'
 
-export const registerRouter = () => {
+const registerRouter = () => {
   let routers: any[] = []
   glob
     .sync(resolve(__dirname, './', '**/*.ts'), {
@@ -15,3 +15,5 @@ export const registerRouter = () => {
 
   return compose(routers)
 }
+
+export default registerRouter
